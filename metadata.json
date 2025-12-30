@@ -1,0 +1,9 @@
+
+{
+  "name": "Journal",
+  "description": "A premium personal diary with AI-powered insights, photo support, and beautiful typography.",
+  "requestFramePermissions": [
+    "geolocation",
+    "camera"
+  ]
+}
