@@ -1,20 +1,75 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <img width="1200" height="475" alt="Journal – AI Powered Diary App" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+## Journal – AI Powered Diary App
 
-This contains everything you need to run your app locally.
+Journal is a modern, privacy‑focused personal diary with:
 
-View your app in AI Studio: https://ai.studio/apps/drive/1AcIrcmdS-j7pHluuXRZmoNBDvjMXi2mb
+- **Beautiful UI**: Dark, minimal interface designed for daily journaling.
+- **AI insights**: Summaries and reflections generated from your entries.
+- **Rich entries**: Support for moods, tags, locations, and images.
+- **Search & history**: Powerful search, filters, and a calendar heatmap.
+- **Export**: Generate a PDF of your journal.
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## Tech Stack
 
+- **Frontend**: React + TypeScript
+- **Bundler**: Vite
+- **Styling**: Tailwind CSS (via CDN) + custom styles
+- **AI**: Gemini API (via `@google/genai`)
+- **PDF generation**: `jspdf`
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## Getting Started
+
+### Prerequisites
+
+- **Node.js** (LTS recommended)
+- A **Gemini API key**
+
+### Installation
+
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Configure environment**
+   - Create a `.env.local` file in the project root.
+   - Add your Gemini key:
+     ```bash
+     GEMINI_API_KEY=your_api_key_here
+     ```
+
+3. **Run the dev server**
+   ```bash
+   npm run dev
+   ```
+   Then open the printed URL in your browser (usually `http://localhost:3000`).
+
+---
+
+## PWA Support
+
+Journal is set up as a **Progressive Web App (PWA)**:
+
+- Installable from supported browsers (e.g. Chrome) as a standalone app.
+- Includes a web app manifest and a basic service worker.
+
+---
+
+## Scripts
+
+- **`npm run dev`** – Start the development server.
+- **`npm run build`** – Create a production build.
+- **`npm run preview`** – Preview the production build locally.
+
+---
+
+## License
+
+Personal / portfolio use. If you’d like to use or extend this project commercially, please reach out to the author.
